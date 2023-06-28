@@ -1,0 +1,110 @@
+/*Main Font, Font-Color and Background*/
+body {
+    margin: 0;
+    background-image: 
+    url(images/background_dark.png);
+    color: white;
+    font-family: Mojangles;
+    font-size: medium;
+}
+
+
+/*Header*/
+header {
+  background-image: url(images/cointier_backdrop.png);
+  filter: brightness(160%);
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 5px 5px 25px 10px rgba(0,0,0,0.5);
+}
+
+/*a in Header*/
+header a {
+  color: white;
+  font-family: Minecraft-Five;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/*Header Zoom Effect*/
+.zoom_header {
+  transition: transform .4s;
+}
+
+.zoom_header:hover {
+  transform: scale(1.15); /*If hover, 115% Zoom*/
+}
+
+
+/*Text Selection*/
+::selection {
+    background: rgba(0, 100, 0, 100);
+}
+
+
+/*Vignette Effect (on whole Page)*/
+html {
+  min-height: 100%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+
+/*Default margin*/
+.box {
+  margin: 8px;
+}
+
+
+
+
+/*Fonts*/
+
+/*Title Font*/
+h1 {
+    font-family: Minecraft-Ten;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: Minecraft-Five;
+    font-weight: lighter;
+}
+
+/*Text Stuff..*/
+a {
+  color: white
+}
+
+
+/*Mojangles Font*/
+@font-face {
+    font-family: Mojangles;
+    src: url(assets/Mojangles.ttf);
+}
+
+/*Minecraft-Ten*/
+@font-face {
+    font-family: Minecraft-Ten;
+    src: url(assets/Minecraft-Ten.otf);
+}
+
+/*Minecraft-Seven*/
+@font-face {
+    font-family: Minecraft-Seven;
+    src: url(assets/Minecraft-Seven.otf);
+}
+
+/*Minecraft-Five*/
+@font-face {
+    font-family: Minecraft-Five;
+    src: url(assets/Minecraft-Five.otf);
+}
+
+/*Minecraft-Five-Bold*/
+@font-face {
+    font-family: Minecraft-Five-Bold;
+    src: url(assets/Minecraft-Five-Bold.otf);
+}
